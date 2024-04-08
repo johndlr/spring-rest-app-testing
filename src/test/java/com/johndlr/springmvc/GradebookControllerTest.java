@@ -146,6 +146,7 @@ public class GradebookControllerTest {
         student.setFirstname("John");
         student.setLastname("Dimitria");
         student.setEmailAddress("dim97@gmail.com");
+
         mockMvc.perform(MockMvcRequestBuilders.post("/")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(student)))
